@@ -21,7 +21,7 @@ namespace pryDiFiniGestorClientes_BaseDeDatos_
 
         //Que tabla vamos a usar
         private String Tabla = "Cliente"; 
-
+         
         public void Listar(DataGridView Grilla)
         {
             //Para que no se cierre sino que te avise cual es el error
