@@ -13,7 +13,7 @@ namespace pryDiFiniGestorClientes_BaseDeDatos_
     {
         private OleDbConnection conexion = new OleDbConnection();
         private OleDbCommand comando = new OleDbCommand();
-        //Trae datos de la tabla
+        //Adaptador para trae datos de la tabla
         private OleDbDataAdapter adaptador = new OleDbDataAdapter();
 
         //Que tipo de base de datos se va a usar y cual es, donde esta
@@ -35,7 +35,7 @@ namespace pryDiFiniGestorClientes_BaseDeDatos_
                 comando.CommandText = Tabla;  //Cual es la tabla
 
                 adaptador = new OleDbDataAdapter(comando); //Conecta el adaptador
-                DataSet DS = new DataSet(); //Trae todos los datos de la tabla en una variable, tabla virtual cargada en la memoria 
+                DataSet DS = new DataSet(); //Trae todos los datos de la tabla en una variable, DataSet (tabla virtual cargada en la memoria) 
                 adaptador.Fill(DS); //Para traer TODOS los datos
 
                 Grilla.DataSource = DS.Tables[0]; //Trae en la grilla la primer tabla por eso pones 0

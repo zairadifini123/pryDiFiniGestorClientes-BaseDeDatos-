@@ -36,10 +36,10 @@
             this.agregarNuevoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeClientesOrdenadoPorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaDeUnClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,12 +108,7 @@
             this.listadoDeDeToolStripMenuItem.Name = "listadoDeDeToolStripMenuItem";
             this.listadoDeDeToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.listadoDeDeToolStripMenuItem.Text = "Listado de deudores...";
-            // 
-            // ventasToolStripMenuItem
-            // 
-            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
-            this.ventasToolStripMenuItem.Text = "Vendedores";
+            this.listadoDeDeToolStripMenuItem.Click += new System.EventHandler(this.listadoDeDeToolStripMenuItem_Click);
             // 
             // listadoDeClientesOrdenadoPorToolStripMenuItem
             // 
@@ -132,6 +127,12 @@
             this.consultaDeUnClienteToolStripMenuItem.Name = "consultaDeUnClienteToolStripMenuItem";
             this.consultaDeUnClienteToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
             this.consultaDeUnClienteToolStripMenuItem.Text = "Consulta de un cliente...";
+            // 
+            // ventasToolStripMenuItem
+            // 
+            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.ventasToolStripMenuItem.Text = "Vendedores";
             // 
             // frmGestorClientesBaseDeDatos
             // 

@@ -27,5 +27,11 @@ namespace pryDiFiniGestorClientes_BaseDeDatos_
         {
             this.Close(); 
         }
+
+        private void listadoDeDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListadoDeudores x = new frmListadoDeudores();
+            x.ShowDialog();
+        }
     }
 }
