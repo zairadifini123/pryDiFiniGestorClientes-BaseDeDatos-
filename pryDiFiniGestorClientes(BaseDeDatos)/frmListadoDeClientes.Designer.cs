@@ -60,7 +60,7 @@
             this.Controls.Add(this.dgvListadoDeClientes);
             this.Name = "frmListadoDeClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmListadoDeClientes";
+            this.Text = "Listado De Clientes (DataSet)";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoDeClientes)).EndInit();
             this.ResumeLayout(false);
 

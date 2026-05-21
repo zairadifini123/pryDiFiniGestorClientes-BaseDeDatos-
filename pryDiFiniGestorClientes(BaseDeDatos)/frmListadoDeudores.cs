@@ -30,5 +30,13 @@ namespace pryDiFiniGestorClientes_BaseDeDatos_
             lblTotalDeuda.Text = x.TotalDeuda.ToString("0.00");
             lblPromedioDeudas.Text = x.PromedioDeuda.ToString("0.00"); 
         }
+
+        private void btnReportar_Click(object sender, EventArgs e)
+        {
+            clsCliente x = new clsCliente();
+            x.ReporteCliente();
+            MessageBox.Show("El reporte se generó correctamente");
+
+        }
     }
 }

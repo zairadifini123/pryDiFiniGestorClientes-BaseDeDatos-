@@ -43,12 +43,14 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnReportar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnReportar);
             this.groupBox2.Controls.Add(this.btnListarDeudores);
             this.groupBox2.Controls.Add(this.btnSalir);
             this.groupBox2.Controls.Add(this.lblPromedioDeudas);
@@ -60,14 +62,14 @@
             this.groupBox2.Controls.Add(this.dgvClientes);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(543, 311);
+            this.groupBox2.Size = new System.Drawing.Size(543, 322);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Consulta de datos";
             // 
             // btnListarDeudores
             // 
-            this.btnListarDeudores.Location = new System.Drawing.Point(105, 259);
+            this.btnListarDeudores.Location = new System.Drawing.Point(282, 290);
             this.btnListarDeudores.Name = "btnListarDeudores";
             this.btnListarDeudores.Size = new System.Drawing.Size(120, 23);
             this.btnListarDeudores.TabIndex = 18;
@@ -77,7 +79,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(11, 259);
+            this.btnSalir.Location = new System.Drawing.Point(11, 290);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(88, 23);
             this.btnSalir.TabIndex = 17;
@@ -179,6 +181,16 @@
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
+            // btnReportar
+            // 
+            this.btnReportar.Location = new System.Drawing.Point(408, 290);
+            this.btnReportar.Name = "btnReportar";
+            this.btnReportar.Size = new System.Drawing.Size(120, 23);
+            this.btnReportar.TabIndex = 19;
+            this.btnReportar.Text = "Reportar";
+            this.btnReportar.UseVisualStyleBackColor = true;
+            this.btnReportar.Click += new System.EventHandler(this.btnReportar_Click);
+            // 
             // frmListadoDeudores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,7 +200,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListadoDeudores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Listado de clientes Deudores";
+            this.Text = "Listado de clientes Deudores (DataReader)";
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
@@ -211,5 +223,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Button btnListarDeudores;
+        private System.Windows.Forms.Button btnReportar;
     }
 }
