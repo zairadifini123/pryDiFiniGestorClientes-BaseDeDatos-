@@ -21,5 +21,14 @@ namespace pryDiFiniGestorClientes_BaseDeDatos_
         {
             this.Close(); 
         }
+
+        private void btnListarDeudores_Click(object sender, EventArgs e)
+        {
+            clsCliente x = new clsCliente();
+            x.ListarDeudores(dgvClientes);
+            lblCantidadClientes.Text = x.CantidadDeudores.ToString();
+            lblTotalDeuda.Text = x.TotalDeuda.ToString("0.00");
+            lblPromedioDeudas.Text = x.PromedioDeuda.ToString("0.00"); 
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListadoDeudores));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnListarDeudores = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblPromedioDeudas = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnListarDeudores);
             this.groupBox2.Controls.Add(this.btnSalir);
             this.groupBox2.Controls.Add(this.lblPromedioDeudas);
             this.groupBox2.Controls.Add(this.lbl2);
@@ -62,6 +64,16 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Consulta de datos";
+            // 
+            // btnListarDeudores
+            // 
+            this.btnListarDeudores.Location = new System.Drawing.Point(105, 259);
+            this.btnListarDeudores.Name = "btnListarDeudores";
+            this.btnListarDeudores.Size = new System.Drawing.Size(120, 23);
+            this.btnListarDeudores.TabIndex = 18;
+            this.btnListarDeudores.Text = "Listado deudores";
+            this.btnListarDeudores.UseVisualStyleBackColor = true;
+            this.btnListarDeudores.Click += new System.EventHandler(this.btnListarDeudores_Click);
             // 
             // btnSalir
             // 
@@ -198,5 +210,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Button btnListarDeudores;
     }
 }
