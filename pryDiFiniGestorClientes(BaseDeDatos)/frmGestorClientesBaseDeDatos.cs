@@ -33,5 +33,11 @@ namespace pryDiFiniGestorClientes_BaseDeDatos_
             frmListadoDeudores x = new frmListadoDeudores();
             x.ShowDialog();
         }
+
+        private void buscarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaCliente x = new frmBusquedaCliente();
+            x.ShowDialog();
+        }
     }
 }
